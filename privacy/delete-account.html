@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eliminacion de cuenta - InBeet</title>
+  <meta
+    name="description"
+    content="Como solicitar y ejecutar la eliminacion de cuenta y datos en InBeet."
+  />
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #0f766e;
+      --line: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #eef6ff 0%, var(--bg) 35%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 920px;
+      margin: 32px auto;
+      padding: 0 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+    }
+    h1, h2 { line-height: 1.25; margin: 0 0 12px; }
+    h1 { font-size: 30px; }
+    h2 {
+      font-size: 20px;
+      margin-top: 26px;
+      color: var(--accent);
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+    p { margin: 10px 0; }
+    ul { margin: 8px 0 8px 18px; padding: 0; }
+    li { margin: 6px 0; }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+    .note {
+      border-left: 4px solid var(--accent);
+      background: #f0fdfa;
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin: 12px 0;
+    }
+    a { color: #0b5bd3; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card">
+      <h1>Eliminacion de cuenta - InBeet</h1>
+      <p class="meta">Ultima actualizacion: 6 de marzo de 2026</p>
+
+      <p>
+        Esta pagina explica como eliminar tu cuenta y los datos asociados en InBeet.
+      </p>
+
+      <h2>1. Eliminacion desde la app</h2>
+      <p>La app permite eliminar la cuenta directamente, sin formulario web.</p>
+      <ul>
+        <li>Abre: Mi perfil.</li>
+        <li>Toca: Eliminar cuenta.</li>
+        <li>Escribe la palabra: ELIMINAR.</li>
+        <li>Confirma la accion.</li>
+      </ul>
+      <div class="note">
+        Si el sistema solicita reautenticacion por seguridad, inicia sesion de nuevo y repite el proceso.
+      </div>
+
+      <h2>2. Datos que se eliminan</h2>
+      <p>Al confirmar, InBeet elimina la cuenta y datos principales del usuario, incluyendo:</p>
+      <ul>
+        <li>Documento de perfil del usuario.</li>
+        <li>Documento de perfil de trabajador (si existe).</li>
+        <li>Publicaciones y contenido generado por el usuario en modulos soportados.</li>
+        <li>Subcolecciones privadas del usuario (guardados, tokens, notificaciones del sistema).</li>
+        <li>Foto de perfil almacenada.</li>
+        <li>Cuenta de autenticacion (Firebase Authentication).</li>
+        <li>Empresas creadas por el usuario y su contenido relacionado, cuando aplica.</li>
+      </ul>
+
+      <h2>3. Datos que pueden conservarse</h2>
+      <p>
+        Se conserva un registro tecnico minimizado y anonimizado en el directorio interno de usuarios,
+        sin correo ni identificadores personales visibles, para consistencia operativa y seguridad.
+      </p>
+
+      <h2>4. Tiempo de procesamiento</h2>
+      <p>
+        La eliminacion se ejecuta al momento de confirmar dentro de la app, sujeta a disponibilidad del servicio.
+      </p>
+
+      <h2>5. Eliminacion parcial de datos</h2>
+      <p>
+        Actualmente InBeet no ofrece una funcion separada para eliminar solo partes de los datos sin eliminar la cuenta.
+      </p>
+
+      <h2>6. Contacto</h2>
+      <p>
+        Si tienes problemas para completar la eliminacion desde la app, escribe a:
+        <a href="mailto:alejandropantilira@gmail.com">alejandropantilira@gmail.com</a>
+      </p>
+
+      <h2>7. English summary</h2>
+      <p>
+        Users can delete their account directly in the app: Profile > Delete account, then type ELIMINAR and confirm.
+        Core profile data and supported user-generated content are deleted. A minimal anonymized technical record may be
+        retained for operational/security consistency.
+      </p>
+    </article>
+  </main>
+</body>
+</html>
